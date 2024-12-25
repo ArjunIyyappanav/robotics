@@ -1,0 +1,258 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Oxanium", serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
+}
+body{
+    background-color:black;
+}
+.head{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px;
+    height:120px;
+    width:99%;
+    background:transparent;
+    backdrop-filter: blur(20px);
+    border-radius:20px;
+    border:3px solid white;
+}
+
+.head>img{
+    height:100px;
+    width:100px;
+    margin:10px;
+    border-radius:20px;
+    border:1px solid white;
+}
+
+.head>ul{
+    display: flex;
+    flex-direction: row;
+    height:120px;
+    width:400px;
+    list-style-type:none;
+    padding-top:40px;
+    gap:80px;
+}
+
+.head>ul>li>button{
+    font-size: 20px;
+    color:white;
+    background: transparent;
+    border:none;
+}
+
+.head>ul>li>button:hover{
+    text-decoration: underline;
+}
+.main{
+    height:200vh;
+    display:flex;
+    flex-direction: column;
+}
+.home-main{
+    display: flex;
+    flex-direction: row;
+}
+.home-main>img{
+    height:550px;
+    width:550px;
+}
+
+.title{
+    margin-top:200px;
+    height:50px;
+    font-size:50px;
+    color:white;
+    display:flex;
+    flex-direction: column;
+}
+.title:after {
+    content:'';
+    color:#C00;
+    animation:write 10s linear infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes write {
+   1%{
+    content:'D';
+   }
+   2%{
+    content:'De';
+   }
+   3%{
+    content:'Des';
+   }
+   4%{
+    content:'Desi';
+   }
+   6%{
+    content:'Desig';
+   }
+   8%{
+    content:'Design';
+   }
+   10%{
+    content:'Desig';
+   }
+   12%{
+    content:'Desi';
+   }
+   16%{
+    content:'Des';
+   }
+   18%{
+    content:'De';
+   }
+   20%{
+    content:'D';
+   }
+   24%{
+    content:'De';
+   }
+   26%{
+    content:'Dev';
+   }
+   28%{
+    content:'Deve';
+   }
+   30%{
+    content:'Devel';
+   }
+   32%{
+    content:'Develo';
+   }
+   34%{
+    content:'Develop';
+   }
+   36%{
+    content:'Develo';
+   }
+   38%{
+    content:'Devel';
+   }
+   40%{
+    content:'Deve';
+   }
+   42%{
+    content:'Dev';
+   }
+   44%{
+    content:'De';
+   }
+   46%{
+    content:'D';
+   }
+   48%{
+    content:'De';
+   }
+   50%{
+    content:'Def';
+   }
+   52%{
+    content:'Defi';
+   }
+   56%{
+    content:'Defin';
+   }
+   58%{
+    content:'Define';
+   }
+   60%{
+    content:'Define ';
+   }
+   62%{
+    content:'Define t';
+   }
+   64%{
+    content:'Define th';
+   }
+   66%{
+    content:'Define the';
+   }
+   70%{
+    content:'Define the W';
+   }
+   74%{
+    content:'Define the WO';
+   }
+   78%{
+    content:'Define the WOR';
+   }
+   82%{
+    content:'Define the WORL';
+   }
+   86%{
+    content:'Define the WORLD';
+   }
+   90%{
+    content:'Define the WOR';
+   }
+   92%{
+    content:'Define the ';
+   }
+   94%{
+    content:'Define ';
+   }
+   96%{
+    content:'Defi';
+   }
+   98%{
+    content:'De';
+   }
+   100%{
+    content:'D';
+   }
+  }
+.sec-main{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    text-align: center;
+}
+.autorotate{
+    margin:80px;
+    height:300px;
+    width:300px;
+    animation:auto-rotate;
+    animation-timeline:view(); 
+}
+
+@keyframes auto-rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(400deg);
+    }
+}
+
+.about-text{
+    font-size:25px;
+    color:white;
+    margin:0px 40px;
+    animation:autoshow;
+    animation-timeline:view();
+}
+
+@keyframes autoshow{
+    from{
+        opacity:0;
+        transform: translateY(500px) scale(0.3);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px) scale(1);
+    }
+}
