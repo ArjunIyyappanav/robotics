@@ -13,19 +13,20 @@
     <header class="head">
         <img src="robo_logo.webp"/>
         <ul>
-            <li><button>HOME</button></li>
-            <li><button>ABOUT</button></li>
-            <li><button>CONTACT</button></li>
+            <li><a href="#main">HOME</a></li>
+            <li><a href="#autorotate">ABOUT</a></li>
+            <li><a href="#main">CONTACT</a></li>
+            <li><a href="register.html">LOGIN</a></li>
         </ul>
     </header>
-    <main class="main">
-        <section class="home-main">
-            <img src="image_processed.png"/>
+    <main class="main" id="main">
+        <section class="home-main" id="home-main">
+            <img src="robo.png" class="float">
             <div class="title">Welcome to Robotics Club</div>
         </section>
-        <section class="sec-main">
-            <img src="image.png" class="autorotate"/>
-            <div class="about-text">
+        <section class="sec-main" id="sec-main">
+            <img src="rotate.png" class="autorotate"/>
+            <div class="about-text" id="about-text">
                 Lorem ipsum odor amet, consectetuer adipiscing elit. Sed et non neque leo accumsan lectus. Ullamcorper aliquam lorem odio ultrices hac penatibus hac mollis. Hendrerit fringilla sit est mattis mi enim.
                 Maecenas arcu nisl nunc nam sociosqu nisl ad sodales. Convallis morbi leo sit sem placerat. Cubilia fringilla fermentum quisque facilisis ultrices magnis; sem nam nascetur.
                 Interdum class malesuada varius lacinia aenean. Imperdiet sit torquent felis adipiscing dapibus aliquam nec phasellus? Lacus nascetur turpis sed ad sit nam sed? Eu leo maecenas euismod penatibus integer lorem.
@@ -37,5 +38,6 @@
     <footer class="foot">
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

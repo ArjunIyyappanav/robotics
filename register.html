@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="./register.css"/>
+</head>
+<body>
+    <main>
+        <form class="container" method="POST">
+            <h2>Register!!</h2>
+            <div class="form username">
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username" name="username" required/>
+                <small>Username Error!</small>
+            </div>
+            <div class="form email">
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email" name="email" required/>
+                <small>Email Error!</small>
+
+            </div>
+            <div class="form password">
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" name="password" required/>
+                <small>Wrong Password</small>
+            </div>
+            <div class="btn">
+                <button class="submitbtn" type="submit" onclick="submitted()">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+    </footer>
+    <script src="./regscript.js"></script>
+</body>
+</html>

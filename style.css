@@ -8,19 +8,26 @@
     font-style: normal;
 }
 body{
-    background-color:black;
+    background-image: url(back.png);
+    background-size:100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
 }
 .head{
+    position:fixed;
+    z-index:100;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin:10px;
+    justify-content:space-evenly;
+    margin:0.2vw 0.5vw 0vw;
     height:120px;
-    width:99%;
+    width:98vw;
     background:transparent;
     backdrop-filter: blur(20px);
     border-radius:20px;
     border:3px solid white;
+    box-shadow: 0px 5px 10px white;
 }
 
 .head>img{
@@ -38,31 +45,65 @@ body{
     width:400px;
     list-style-type:none;
     padding-top:40px;
-    gap:80px;
+    gap:60px;
 }
 
-.head>ul>li>button{
+.head>ul>li>a{
     font-size: 20px;
     color:white;
     background: transparent;
     border:none;
+    text-decoration: none;
 }
 
-.head>ul>li>button:hover{
+.head>ul>li>a:hover{
     text-decoration: underline;
 }
 .main{
-    height:200vh;
+    height:300vh;
     display:flex;
     flex-direction: column;
+    position:absolute;
+    top:120px;
 }
 .home-main{
     display: flex;
     flex-direction: row;
 }
 .home-main>img{
-    height:550px;
-    width:550px;
+    height:600px;
+    width:600px;
+    mix-blend-mode:lighten;
+}
+
+.float{
+    animation:floater 6s ease-out infinite;
+}
+
+.float::after{
+    position:absolute;
+    content:'';
+    color:white;
+    height:10px;
+    width:10px;
+}
+
+@keyframes floater{
+    0%{
+        transform: translateY(35px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(45px);
+    }
+    75%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(40px);
+    }
 }
 
 .title{
@@ -227,6 +268,7 @@ body{
     width:300px;
     animation:auto-rotate;
     animation-timeline:view(); 
+    mix-blend-mode: lighten;
 }
 
 @keyframes auto-rotate{
@@ -234,7 +276,7 @@ body{
         transform:rotate(0deg);
     }
     to{
-        transform:rotate(400deg);
+        transform:rotate(360deg);
     }
 }
 
@@ -249,10 +291,10 @@ body{
 @keyframes autoshow{
     from{
         opacity:0;
-        transform: translateY(500px) scale(0.3);
+        transform: translateY(80px) scale(0.3);
     }
     to{
-        opacity:1;
-        transform: translateY(0px) scale(1);
+        opacity:1;  
+        transform: translateY(0px) scale(1.05);
     }
 }
