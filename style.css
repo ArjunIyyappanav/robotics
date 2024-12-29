@@ -298,3 +298,83 @@ body{
         transform: translateY(0px) scale(1.05);
     }
 }
+
+.cards{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+
+.about-cards{
+    height:450px;
+    width:380px;
+    border:2px solid white;
+    border-radius: 20%;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    box-shadow: 10px 10px 13px rgba(255,255,255,0.8);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-cards:hover{
+    height:400px;
+    width:370px;
+    filter:greyscale(1) blur(10px);
+}
+.foot{
+    position:absolute;
+    color:white;
+    top:300vh;
+    height:25vh;
+    width:100vw;
+    display:flex;
+    flex-direction: row;
+    border:2px solid white;
+    background:transparent;
+    backdrop-filter: blur(20px);
+}
+
+.contact{
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    height:100%;
+    width:50%;
+}
+
+.contact>span{
+    margin-top:30px;
+    font-size: 20px;
+
+}
+
+.socials{
+    height:100%;
+    width:50%;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fa {
+    padding: 20px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color:white;
+    border-radius: 20px;
+  }
+
+.fa:hover{
+    background-color: grey;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}

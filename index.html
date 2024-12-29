@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="head">
@@ -15,7 +16,8 @@
         <ul>
             <li><a href="#main">HOME</a></li>
             <li><a href="#autorotate">ABOUT</a></li>
-            <li><a href="#main">CONTACT</a></li>
+            <li><a href="#foot">CONTACT</a></li>
+            <li><a href="#cards">MEMBERS</a></li>
             <li><a href="register.html">LOGIN</a></li>
         </ul>
     </header>
@@ -25,7 +27,7 @@
             <div class="title">Welcome to Robotics Club</div>
         </section>
         <section class="sec-main" id="sec-main">
-            <img src="rotate.png" class="autorotate"/>
+            <img src="rotate.png" class="autorotate" id="autorotate"/>
             <div class="about-text" id="about-text">
                 Lorem ipsum odor amet, consectetuer adipiscing elit. Sed et non neque leo accumsan lectus. Ullamcorper aliquam lorem odio ultrices hac penatibus hac mollis. Hendrerit fringilla sit est mattis mi enim.
                 Maecenas arcu nisl nunc nam sociosqu nisl ad sodales. Convallis morbi leo sit sem placerat. Cubilia fringilla fermentum quisque facilisis ultrices magnis; sem nam nascetur.
@@ -34,9 +36,22 @@
                 justo dui congue tortor. Interdum et pulvinar proin sodales in lorem. Eu consequat torquent velit pharetra nulla fermentum pellentesque mus.
             </div>
         </section>
+        <section class="cards" id="cards">
+            <div class="about-cards">Lorem ipsum odor amet</div>
+            <div class="about-cards">Lorem ipsum odor amet</div>
+            <div class="about-cards">Lorem ipsum odor amet</div>
+        </section>
     </main>
-    <footer class="foot">
-
+    <footer class="foot" id="foot">
+        <div class="contact">
+            <span>Contact : <i>9XXXXXXX</i></span>
+            <span>Email : Robotics@mail.com</span>
+        </div>
+        <div class="socials">
+            <a href="#" class="fa fa-facebook" style="font-size: 40px;"></a>
+            <a href="#" class="fa fa-twitter" style="font-size: 40px;"></a>
+            <a href="#" class="fa fa-instagram" style="font-size: 40px;"></a>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
